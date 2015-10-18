@@ -15,6 +15,13 @@
 		C3CA22B51BD40909005755DE /* SurfLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22B41BD40909005755DE /* SurfLogTests.swift */; };
 		C3CA22C21BD40AA8005755DE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C11BD40AA8005755DE /* CoreDataStack.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CA22C51BD42EA6005755DE /* SurfLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		C3CA22C71BD43ECA005755DE /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C61BD43ECA005755DE /* HomeScreenViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C3CA22CE1BD4455F005755DE /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C81BD4455F005755DE /* Session+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C3CA22CF1BD4455F005755DE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C91BD4455F005755DE /* Session.swift */; settings = {ASSET_TAGS = (); }; };
+		C3CA22D01BD4455F005755DE /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CA1BD4455F005755DE /* Board+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C3CA22D11BD4455F005755DE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CB1BD4455F005755DE /* Board.swift */; settings = {ASSET_TAGS = (); }; };
+		C3CA22D21BD4455F005755DE /* Wetsuit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CC1BD4455F005755DE /* Wetsuit+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		C3CA22D31BD4455F005755DE /* Wetsuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CD1BD4455F005755DE /* Wetsuit.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,13 @@
 		C3CA22B61BD40909005755DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3CA22C11BD40AA8005755DE /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../CoreDataStack.swift; sourceTree = "<group>"; };
 		C3CA22C41BD42EA6005755DE /* SurfLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurfLog.xcdatamodel; sourceTree = "<group>"; };
+		C3CA22C61BD43ECA005755DE /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		C3CA22C81BD4455F005755DE /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Session+CoreDataProperties.swift"; path = "../Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C3CA22C91BD4455F005755DE /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Session.swift; path = ../Session.swift; sourceTree = "<group>"; };
+		C3CA22CA1BD4455F005755DE /* Board+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+CoreDataProperties.swift"; path = "../Board+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C3CA22CB1BD4455F005755DE /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = ../Board.swift; sourceTree = "<group>"; };
+		C3CA22CC1BD4455F005755DE /* Wetsuit+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Wetsuit+CoreDataProperties.swift"; path = "../Wetsuit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C3CA22CD1BD4455F005755DE /* Wetsuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wetsuit.swift; path = ../Wetsuit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +95,10 @@
 		C3CA229E1BD40909005755DE /* SurfLog */ = {
 			isa = PBXGroup;
 			children = (
+				C3CA22D41BD4456B005755DE /* Model */,
 				C3CA229F1BD40909005755DE /* AppDelegate.swift */,
 				C3CA22A11BD40909005755DE /* ViewController.swift */,
+				C3CA22C61BD43ECA005755DE /* HomeScreenViewController.swift */,
 				C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */,
 				C3CA22C11BD40AA8005755DE /* CoreDataStack.swift */,
 				C3CA22A31BD40909005755DE /* Main.storyboard */,
@@ -100,6 +116,19 @@
 				C3CA22B61BD40909005755DE /* Info.plist */,
 			);
 			path = SurfLogTests;
+			sourceTree = "<group>";
+		};
+		C3CA22D41BD4456B005755DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA22C81BD4455F005755DE /* Session+CoreDataProperties.swift */,
+				C3CA22C91BD4455F005755DE /* Session.swift */,
+				C3CA22CA1BD4455F005755DE /* Board+CoreDataProperties.swift */,
+				C3CA22CB1BD4455F005755DE /* Board.swift */,
+				C3CA22CC1BD4455F005755DE /* Wetsuit+CoreDataProperties.swift */,
+				C3CA22CD1BD4455F005755DE /* Wetsuit.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,10 +231,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CA22D31BD4455F005755DE /* Wetsuit.swift in Sources */,
+				C3CA22CF1BD4455F005755DE /* Session.swift in Sources */,
+				C3CA22CE1BD4455F005755DE /* Session+CoreDataProperties.swift in Sources */,
 				C3CA22C21BD40AA8005755DE /* CoreDataStack.swift in Sources */,
 				C3CA22A21BD40909005755DE /* ViewController.swift in Sources */,
+				C3CA22D01BD4455F005755DE /* Board+CoreDataProperties.swift in Sources */,
 				C3CA22C51BD42EA6005755DE /* SurfLog.xcdatamodeld in Sources */,
+				C3CA22D21BD4455F005755DE /* Wetsuit+CoreDataProperties.swift in Sources */,
 				C3CA22A01BD40909005755DE /* AppDelegate.swift in Sources */,
+				C3CA22C71BD43ECA005755DE /* HomeScreenViewController.swift in Sources */,
+				C3CA22D11BD4455F005755DE /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
