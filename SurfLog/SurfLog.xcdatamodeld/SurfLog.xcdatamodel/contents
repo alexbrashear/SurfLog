@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
-    <entity name="Board" syncable="YES">
+    <entity name="Board" representedClassName=".Board" syncable="YES">
         <attribute name="feet" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="inches" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
-    <entity name="Session" syncable="YES">
+    <entity name="Session" representedClassName=".Session" syncable="YES">
         <attribute name="additionalNotes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="conditions" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -17,7 +17,7 @@
         <attribute name="waterTemp" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="wavesSurfed" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
-    <entity name="Wetsuit" syncable="YES">
+    <entity name="Wetsuit" representedClassName=".Wetsuit" syncable="YES">
         <attribute name="booties" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="extremityThickness" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="gloves" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
