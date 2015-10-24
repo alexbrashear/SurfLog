@@ -1,17 +1,14 @@
 //
-//  HomeScreenViewController.swift
+//  WetsuitsTableViewController.swift
 //  SurfLog
 //
-//  Created by Alex Brashear on 10/18/15.
+//  Created by Alex Brashear on 10/24/15.
 //  Copyright © 2015 Alex Brashear. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
-class HomeScreenViewController: UITableViewController {
-    
-    var managedContext: NSManagedObjectContext!
+class WetsuitsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
