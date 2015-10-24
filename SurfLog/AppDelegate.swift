@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         let navigationController = window!.rootViewController as! UINavigationController
-        let viewController = navigationController.topViewController as! HomeScreenViewController
+        let multipleTabsViewController = navigationController.topViewController as! MultipleTabsViewController
         
-        viewController.managedContext = coreDataStack.context
+        multipleTabsViewController.managedContext = coreDataStack.context
         
         return true
     }

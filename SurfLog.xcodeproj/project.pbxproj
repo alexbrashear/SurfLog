@@ -29,6 +29,10 @@
 		C3D4BB1F1BDBD6CB0007B824 /* BoardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB1D1BDBD6CB0007B824 /* BoardsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3D4BB211BDBD6DA0007B824 /* WetsuitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3D4BB221BDBD6DA0007B824 /* WetsuitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C3D4BB251BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C3D4BB261BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C3D4BB281BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C3D4BB291BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,8 @@
 		C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		C3D4BB1D1BDBD6CB0007B824 /* BoardsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardsTableViewController.swift; sourceTree = "<group>"; };
 		C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WetsuitsTableViewController.swift; sourceTree = "<group>"; };
+		C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleTabsViewController.swift; sourceTree = "<group>"; };
+		C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				C3CA229F1BD40909005755DE /* AppDelegate.swift */,
+				C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */,
+				C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */,
 				C3D4BB231BDBD6E40007B824 /* Controllers */,
 				C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */,
 				C3CA22D41BD4456B005755DE /* Model */,
@@ -256,6 +264,7 @@
 				C3CA22D31BD4455F005755DE /* Wetsuit.swift in Sources */,
 				C3CA22CF1BD4455F005755DE /* Session.swift in Sources */,
 				C3CA22CE1BD4455F005755DE /* Session+CoreDataProperties.swift in Sources */,
+				C3D4BB251BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */,
 				C3CA22C21BD40AA8005755DE /* CoreDataStack.swift in Sources */,
 				C3CA22D01BD4455F005755DE /* Board+CoreDataProperties.swift in Sources */,
 				C3CA22C51BD42EA6005755DE /* SurfLog.xcdatamodeld in Sources */,
@@ -263,6 +272,7 @@
 				C3D4BB1B1BDBD6B20007B824 /* SettingsTableViewController.swift in Sources */,
 				C3D4BB211BDBD6DA0007B824 /* WetsuitsTableViewController.swift in Sources */,
 				C3CA22A01BD40909005755DE /* AppDelegate.swift in Sources */,
+				C3D4BB281BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */,
 				C3D4BB1E1BDBD6CB0007B824 /* BoardsTableViewController.swift in Sources */,
 				C3CA22C71BD43ECA005755DE /* AnalyticsViewController.swift in Sources */,
 				C3CA22D11BD4455F005755DE /* Board.swift in Sources */,
@@ -277,6 +287,8 @@
 				C3D4BB1F1BDBD6CB0007B824 /* BoardsTableViewController.swift in Sources */,
 				C3D4BB191BDBD6840007B824 /* LogTableViewController.swift in Sources */,
 				C3CA22B51BD40909005755DE /* SurfLogTests.swift in Sources */,
+				C3D4BB291BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */,
+				C3D4BB261BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */,
 				C3D4BB1C1BDBD6B20007B824 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
