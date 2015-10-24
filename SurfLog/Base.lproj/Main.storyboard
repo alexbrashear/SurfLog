@@ -102,6 +102,8 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="auv-0D-lo7"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIx-RG-uHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

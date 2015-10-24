@@ -17,8 +17,11 @@ class LogTableViewController: ManagedTabViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "addButtonTapped:")
-        self.navigationItem.rightBarButtonItem = addButton
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action:"addButtonTapped:")
+        self.tabBarController!.navigationItem.setRightBarButtonItem(addButton, animated: true)
     }
 
     // MARK: - Table view data source
@@ -86,7 +89,6 @@ class LogTableViewController: ManagedTabViewController {
     // MARK: - IBActions
     
     func addButtonTapped(sender: AnyObject?) {
-        
     }
 
 }
