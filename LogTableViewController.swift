@@ -12,11 +12,21 @@ import CoreData
 class LogTableViewController: ManagedTabViewController {
     
     let SessionLogCellIdentifier = "SessionLogCellIdentifier"
-    var logs = [Session]()
+    let LogToAddEntrySegueIdentifier = "LogToAddEntrySegueIdentifier"
+    var fetchedResultsController : NSFetchedResultsController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let fetchRequest = NSFetchRequest(entityName: "Session")
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedContext, sectionNameKeyPath: nil, cacheName: nil)
+        
+        do {
+            try fetchedResultsController.performFetch()
+        } catch let error as NSError {
+            print("Error: \(error.localizedDescription)")
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -27,11 +37,12 @@ class LogTableViewController: ManagedTabViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return fetchedResultsController.sections!.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return logs.count
+        let sectionInfo = fetchedResultsController.sections![section]
+        return sectionInfo.numberOfObjects
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -76,19 +87,23 @@ class LogTableViewController: ManagedTabViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == LogToAddEntrySegueIdentifier) {
+            let viewController: AddLogEntryViewController = segue.destinationViewController as! AddLogEntryViewController
+            viewController.managedContext = self.managedContext
+        } else if (segue.identifier == SessionLogCellIdentifier) {
+            
+        }
     }
-    */
+
     
     // MARK: - IBActions
     
     func addButtonTapped(sender: AnyObject?) {
+        self.performSegueWithIdentifier(LogToAddEntrySegueIdentifier, sender: self)
     }
 
 }
