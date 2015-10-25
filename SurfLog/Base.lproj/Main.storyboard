@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JTx-aD-dHx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Item-->
@@ -46,55 +47,95 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SessionLogCellIdentifier" rowHeight="179" id="43E-hx-9hh">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SessionLogCellIdentifier" rowHeight="179" id="43E-hx-9hh" customClass="SessionTableViewCell" customModule="SurfLog" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="179"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="43E-hx-9hh" id="Adq-ux-L0D">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="178.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="179"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="En6-pE-7u1">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="En6-pE-7u1">
                                             <rect key="frame" x="322" y="40" width="257" height="130"/>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="257" id="Aie-fP-A4j"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waves Surfed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJK-5I-0ld">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waves Surfed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJK-5I-0ld">
                                             <rect key="frame" x="13" y="126" width="113" height="21"/>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="U0N-GO-9WJ"/>
+                                                <constraint firstAttribute="width" constant="113" id="VZH-PS-FYB"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10/21/15 AM session" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjR-an-gYS">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/21/15 AM session" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjR-an-gYS">
                                             <rect key="frame" x="13" y="8" width="321" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFO-EC-PzM">
-                                            <rect key="frame" x="13" y="47" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFO-EC-PzM">
+                                            <rect key="frame" x="13" y="47" width="269" height="21"/>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="dIO-Yf-1bh"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time in Water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFR-xn-qVg">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time in Water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFR-xn-qVg">
                                             <rect key="frame" x="13" y="88" width="137" height="21"/>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="ReA-zj-mAK"/>
+                                                <constraint firstAttribute="width" constant="137" id="o4W-5W-m9l"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Bq-SJ-342">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Bq-SJ-342">
                                             <rect key="frame" x="351" y="1" width="199" height="36"/>
                                             <animations/>
                                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                     </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="0Bq-SJ-342" firstAttribute="leading" secondItem="GjR-an-gYS" secondAttribute="trailing" constant="17" id="1A0-NW-cO3"/>
+                                        <constraint firstItem="GjR-an-gYS" firstAttribute="centerY" secondItem="0Bq-SJ-342" secondAttribute="centerY" id="3Eq-X1-Uc1"/>
+                                        <constraint firstItem="En6-pE-7u1" firstAttribute="leading" secondItem="yFO-EC-PzM" secondAttribute="trailing" constant="40" id="6KO-XJ-qDe"/>
+                                        <constraint firstItem="En6-pE-7u1" firstAttribute="top" secondItem="GjR-an-gYS" secondAttribute="bottom" constant="11" id="6cU-kE-01W"/>
+                                        <constraint firstItem="En6-pE-7u1" firstAttribute="top" secondItem="0Bq-SJ-342" secondAttribute="bottom" constant="3" id="7MQ-SC-8bU"/>
+                                        <constraint firstItem="TJK-5I-0ld" firstAttribute="top" secondItem="FFR-xn-qVg" secondAttribute="bottom" constant="17" id="7Qb-uU-jrZ"/>
+                                        <constraint firstItem="yFO-EC-PzM" firstAttribute="leading" secondItem="FFR-xn-qVg" secondAttribute="leading" id="8kn-iX-DFd"/>
+                                        <constraint firstItem="En6-pE-7u1" firstAttribute="centerX" secondItem="0Bq-SJ-342" secondAttribute="centerX" id="9ou-aS-MdR"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="En6-pE-7u1" secondAttribute="trailing" constant="13" id="I8q-ZH-3hp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TJK-5I-0ld" secondAttribute="bottom" constant="23.5" id="IwE-D3-FRO"/>
+                                        <constraint firstItem="yFO-EC-PzM" firstAttribute="top" secondItem="GjR-an-gYS" secondAttribute="bottom" constant="18" id="Liu-gY-cIB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="En6-pE-7u1" secondAttribute="bottom" constant="0.5" id="P7t-KJ-UPp"/>
+                                        <constraint firstItem="GjR-an-gYS" firstAttribute="top" secondItem="Adq-ux-L0D" secondAttribute="topMargin" id="aqn-Co-ZPc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="0Bq-SJ-342" secondAttribute="trailing" constant="42" id="byB-bs-347"/>
+                                        <constraint firstItem="FFR-xn-qVg" firstAttribute="top" secondItem="yFO-EC-PzM" secondAttribute="bottom" constant="20" id="dph-B4-kDp"/>
+                                        <constraint firstItem="FFR-xn-qVg" firstAttribute="leading" secondItem="TJK-5I-0ld" secondAttribute="leading" id="dsQ-Rt-NLd"/>
+                                        <constraint firstItem="GjR-an-gYS" firstAttribute="leading" secondItem="Adq-ux-L0D" secondAttribute="leadingMargin" constant="5" id="e3K-Cf-G6v"/>
+                                        <constraint firstItem="GjR-an-gYS" firstAttribute="leading" secondItem="yFO-EC-PzM" secondAttribute="leading" id="tI5-NO-mvp"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
+                                    <outlet property="ratingView" destination="0Bq-SJ-342" id="zeK-em-ghL"/>
+                                    <outlet property="sessionImage" destination="En6-pE-7u1" id="XJC-mM-4ED"/>
+                                    <outlet property="spotLabel" destination="yFO-EC-PzM" id="vBZ-9C-a33"/>
+                                    <outlet property="timeInWaterLabel" destination="FFR-xn-qVg" id="2p2-Q8-tg5"/>
+                                    <outlet property="timeLabel" destination="GjR-an-gYS" id="oN0-KI-aeL"/>
+                                    <outlet property="wavesSurfedLabel" destination="TJK-5I-0ld" id="AHU-uo-RsV"/>
                                     <segue destination="hrM-aV-dh2" kind="presentation" identifier="LogToAddEntrySegueIdentifier" id="92K-XN-gE5"/>
                                 </connections>
                             </tableViewCell>

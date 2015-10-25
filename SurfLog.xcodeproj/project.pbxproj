@@ -34,6 +34,7 @@
 		C3FF50721BDC384700BE2519 /* AddLogEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3FF50781BDC784900BE2519 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50761BDC784900BE2519 /* Session+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		C3FF50791BDC784900BE2519 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50771BDC784900BE2519 /* Session.swift */; settings = {ASSET_TAGS = (); }; };
+		C3FF507B1BDC806200BE2519 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF507A1BDC806200BE2519 /* SessionTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLogEntryViewController.swift; sourceTree = "<group>"; };
 		C3FF50761BDC784900BE2519 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3FF50771BDC784900BE2519 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		C3FF507A1BDC806200BE2519 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				C3CA229F1BD40909005755DE /* AppDelegate.swift */,
 				C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */,
 				C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */,
+				C3FF507A1BDC806200BE2519 /* SessionTableViewCell.swift */,
 				C3D4BB231BDBD6E40007B824 /* Controllers */,
 				C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */,
 				C3CA22D41BD4456B005755DE /* Model */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FF507B1BDC806200BE2519 /* SessionTableViewCell.swift in Sources */,
 				C3D4BB181BDBD6840007B824 /* LogTableViewController.swift in Sources */,
 				C3CA22D31BD4455F005755DE /* Wetsuit.swift in Sources */,
 				C3D4BB251BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */,
