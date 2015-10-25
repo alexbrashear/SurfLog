@@ -94,6 +94,9 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="hrM-aV-dh2" kind="presentation" identifier="LogToAddEntrySegueIdentifier" id="92K-XN-gE5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -108,6 +111,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIx-RG-uHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2342" y="-775"/>
+        </scene>
+        <!--Add Log Entry View Controller-->
+        <scene sceneID="fKJ-0E-jTq">
+            <objects>
+                <viewController id="hrM-aV-dh2" customClass="AddLogEntryViewController" customModule="SurfLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kF6-UX-Wcz"/>
+                        <viewControllerLayoutGuide type="bottom" id="tK5-oJ-Pe1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="umC-Is-pf3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADs-Be-4fC">
+                                <rect key="frame" x="63" y="145" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7D-dN-cVQ">
+                                <rect key="frame" x="63" y="176" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F0V-eJ-reh">
+                                <rect key="frame" x="240" y="91" width="121" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="AM"/>
+                                    <segment title="PM"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucd-VT-Sg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3146" y="-1491"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pv8-Zr-LcM">
+            <objects>
+                <viewController id="Xdc-hf-DP4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eng-1f-Bzl"/>
+                        <viewControllerLayoutGuide type="bottom" id="yv7-do-429"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5hi-GN-sv7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6d-E6-2Kw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3146" y="-775"/>
         </scene>
         <!--Item-->
         <scene sceneID="IvQ-h5-xhU">

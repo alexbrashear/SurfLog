@@ -33,6 +33,7 @@
 		C3D4BB261BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3D4BB281BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3D4BB291BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C3FF50721BDC384700BE2519 /* AddLogEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WetsuitsTableViewController.swift; sourceTree = "<group>"; };
 		C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleTabsViewController.swift; sourceTree = "<group>"; };
 		C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedTabViewController.swift; sourceTree = "<group>"; };
+		C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLogEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,13 +153,22 @@
 		C3D4BB231BDBD6E40007B824 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C3FF50731BDC386100BE2519 /* Log */,
 				C3CA22C61BD43ECA005755DE /* AnalyticsViewController.swift */,
-				C3D4BB171BDBD6840007B824 /* LogTableViewController.swift */,
 				C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */,
 				C3D4BB1D1BDBD6CB0007B824 /* BoardsTableViewController.swift */,
 				C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C3FF50731BDC386100BE2519 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */,
+				C3D4BB171BDBD6840007B824 /* LogTableViewController.swift */,
+			);
+			name = Log;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 				C3D4BB281BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */,
 				C3D4BB1E1BDBD6CB0007B824 /* BoardsTableViewController.swift in Sources */,
 				C3CA22C71BD43ECA005755DE /* AnalyticsViewController.swift in Sources */,
+				C3FF50721BDC384700BE2519 /* AddLogEntryViewController.swift in Sources */,
 				C3CA22D11BD4455F005755DE /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
