@@ -2,7 +2,7 @@
 //  Session.swift
 //  SurfLog
 //
-//  Created by Alex Brashear on 10/18/15.
+//  Created by Alex Brashear on 10/24/15.
 //  Copyright © 2015 Alex Brashear. All rights reserved.
 //
 

@@ -11,7 +11,12 @@ import CoreData
 
 class AddLogEntryViewController: UIViewController {
     
-    var managedContext: NSManagedObjectContext!
+    @IBOutlet var timeInWaterField: UITextField!
+    @IBOutlet var surfSpotField: UITextField!
+    @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet var timeOfDaySegmentedControl: UISegmentedControl!
+    @IBOutlet var submitButton: UIButton!
+    var coreDataManager: CoreDataStack!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,5 +39,15 @@ class AddLogEntryViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK - IBActions
+    
+    @IBAction func submitButtonTapped(sender: UIButton) {
+        let session = NSEntityDescription.insertNewObjectForEntityForName("Session", inManagedObjectContext: coreDataManager.context) as! Session
+        session.spot = surfSpotField.text
+        session.date = datePicker.date
+        session.timeInWater = 1.5
+        coreDataManager.saveContext()
+    }
 
 }

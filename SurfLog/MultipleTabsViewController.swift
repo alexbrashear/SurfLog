@@ -11,7 +11,7 @@ import CoreData
 
 class MultipleTabsViewController: UITabBarController {
     
-    var managedContext : NSManagedObjectContext!
+    var coreDataManager : CoreDataStack!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class MultipleTabsViewController: UITabBarController {
         for viewController in self.viewControllers! {
             if (viewController.isKindOfClass(ManagedTabViewController)) {
                 let managedTabViewController = viewController as! ManagedTabViewController
-                managedTabViewController.managedContext = self.managedContext
+                managedTabViewController.coreDataManager = self.coreDataManager
             }
         }
     }

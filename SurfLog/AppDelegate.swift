@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = window!.rootViewController as! UINavigationController
         let multipleTabsViewController = navigationController.topViewController as! MultipleTabsViewController
         
-        multipleTabsViewController.managedContext = coreDataStack.context
+        multipleTabsViewController.coreDataManager = coreDataStack
         
         return true
     }
