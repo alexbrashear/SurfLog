@@ -12,7 +12,7 @@
 		C3CA22A71BD40909005755DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CA22A61BD40909005755DE /* Assets.xcassets */; };
 		C3CA22AA1BD40909005755DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CA22A81BD40909005755DE /* LaunchScreen.storyboard */; };
 		C3CA22B51BD40909005755DE /* SurfLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22B41BD40909005755DE /* SurfLogTests.swift */; };
-		C3CA22C21BD40AA8005755DE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C11BD40AA8005755DE /* CoreDataStack.swift */; settings = {ASSET_TAGS = (); }; };
+		C3CA22C21BD40AA8005755DE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C11BD40AA8005755DE /* CoreDataManager.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CA22C51BD42EA6005755DE /* SurfLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
 		C3CA22C71BD43ECA005755DE /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C61BD43ECA005755DE /* AnalyticsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3CA22D01BD4455F005755DE /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CA1BD4455F005755DE /* Board+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
@@ -57,8 +57,8 @@
 		C3CA22B01BD40909005755DE /* SurfLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CA22B41BD40909005755DE /* SurfLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfLogTests.swift; sourceTree = "<group>"; };
 		C3CA22B61BD40909005755DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3CA22C11BD40AA8005755DE /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../CoreDataStack.swift; sourceTree = "<group>"; };
-		C3CA22C41BD42EA6005755DE /* SurfLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurfLog.xcdatamodel; sourceTree = "<group>"; };
+		C3CA22C11BD40AA8005755DE /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataManager.swift; path = ../CoreDataManager.swift; sourceTree = "<group>"; };
+		C3CA22C41BD42EA6005755DE /* SurfLog.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = SurfLog.xcdatamodel; sourceTree = "<group>"; };
 		C3CA22C61BD43ECA005755DE /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		C3CA22CA1BD4455F005755DE /* Board+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+CoreDataProperties.swift"; path = "../Board+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3CA22CB1BD4455F005755DE /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = ../Board.swift; sourceTree = "<group>"; };
@@ -74,6 +74,7 @@
 		C3FF50761BDC784900BE2519 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3FF50771BDC784900BE2519 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		C3FF507A1BDC806200BE2519 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
+		C3FF507C1BDD663200BE2519 /* SurfLog 1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SurfLog 1.0.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +123,7 @@
 				C3D4BB231BDBD6E40007B824 /* Controllers */,
 				C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */,
 				C3CA22D41BD4456B005755DE /* Model */,
-				C3CA22C11BD40AA8005755DE /* CoreDataStack.swift */,
+				C3CA22C11BD40AA8005755DE /* CoreDataManager.swift */,
 				C3CA22A31BD40909005755DE /* Main.storyboard */,
 				C3CA22A61BD40909005755DE /* Assets.xcassets */,
 				C3CA22A81BD40909005755DE /* LaunchScreen.storyboard */,
@@ -279,7 +280,7 @@
 				C3CA22D31BD4455F005755DE /* Wetsuit.swift in Sources */,
 				C3D4BB251BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */,
 				C3FF50781BDC784900BE2519 /* Session+CoreDataProperties.swift in Sources */,
-				C3CA22C21BD40AA8005755DE /* CoreDataStack.swift in Sources */,
+				C3CA22C21BD40AA8005755DE /* CoreDataManager.swift in Sources */,
 				C3CA22D01BD4455F005755DE /* Board+CoreDataProperties.swift in Sources */,
 				C3CA22C51BD42EA6005755DE /* SurfLog.xcdatamodeld in Sources */,
 				C3FF50791BDC784900BE2519 /* Session.swift in Sources */,
@@ -504,9 +505,10 @@
 		C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C3FF507C1BDD663200BE2519 /* SurfLog 1.0.xcdatamodel */,
 				C3CA22C41BD42EA6005755DE /* SurfLog.xcdatamodel */,
 			);
-			currentVersion = C3CA22C41BD42EA6005755DE /* SurfLog.xcdatamodel */;
+			currentVersion = C3FF507C1BDD663200BE2519 /* SurfLog 1.0.xcdatamodel */;
 			path = SurfLog.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

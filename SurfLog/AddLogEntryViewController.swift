@@ -11,22 +11,18 @@ import CoreData
 
 class AddLogEntryViewController: UIViewController {
     
-    @IBOutlet var timeInWaterField: UITextField!
     @IBOutlet var surfSpotField: UITextField!
+    @IBOutlet var timeInWaterField: UITextField!
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet var timeOfDaySegmentedControl: UISegmentedControl!
     @IBOutlet var submitButton: UIButton!
-    var coreDataManager: CoreDataStack!
+    var coreDataManager: CoreDataManager!
+    var logTableViewController : LogTableViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
@@ -48,6 +44,9 @@ class AddLogEntryViewController: UIViewController {
         session.date = datePicker.date
         session.timeInWater = 1.5
         coreDataManager.saveContext()
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            self.logTableViewController.tableView.reloadData()
+        }
     }
 
 }

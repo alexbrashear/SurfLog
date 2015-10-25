@@ -11,6 +11,6 @@ import CoreData
 
 class ManagedTabViewController: UITableViewController {
 
-    var coreDataManager : CoreDataStack!
+    var coreDataManager : CoreDataManager!
 
 }

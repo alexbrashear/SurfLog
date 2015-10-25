@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h8w-MB-D8r" id="hcn-wP-dco">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -210,7 +210,7 @@
                     <connections>
                         <outlet property="datePicker" destination="9cq-QP-jqA" id="3Zy-Vz-UbH"/>
                         <outlet property="submitButton" destination="T1N-b7-sSz" id="Xpe-g0-QTA"/>
-                        <outlet property="surfSpotTextField" destination="ADs-Be-4fC" id="rus-rt-P7U"/>
+                        <outlet property="surfSpotField" destination="ADs-Be-4fC" id="ztU-OB-adn"/>
                         <outlet property="timeInWaterField" destination="E7D-dN-cVQ" id="hRA-Bz-CV9"/>
                         <outlet property="timeOfDaySegmentedControl" destination="F0V-eJ-reh" id="Mbr-Bw-Iq8"/>
                     </connections>
@@ -252,7 +252,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gug-Fe-uTl" id="ghl-AU-y7M">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -284,7 +284,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DXS-z1-dhS" id="tjD-om-ktg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>

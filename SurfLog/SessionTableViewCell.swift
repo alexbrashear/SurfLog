@@ -16,6 +16,13 @@ class SessionTableViewCell: UITableViewCell {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var ratingView: UIView!
     @IBOutlet var sessionImage: UIImageView!
+    
+    func configureCellForSection(session: Session) {
+        wavesSurfedLabel.text = session.wavesSurfed?.stringValue
+        timeInWaterLabel.text = session.timeInWater?.stringValue
+        spotLabel.text = session.spot
+        timeLabel.text = session.date?.description
+    }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

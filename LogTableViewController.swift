@@ -9,11 +9,12 @@
 import UIKit
 import CoreData
 
-class LogTableViewController: ManagedTabViewController {
+class LogTableViewController: ManagedTabViewController, NSFetchedResultsControllerDelegate {
     
     let SessionLogCellIdentifier = "SessionLogCellIdentifier"
     let LogToAddEntrySegueIdentifier = "LogToAddEntrySegueIdentifier"
     var fetchedResultsController : NSFetchedResultsController!
+//    var logs = [Session]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class LogTableViewController: ManagedTabViewController {
         fetchRequest.sortDescriptors = [sortDescriptor]
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.coreDataManager.context, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController.delegate = self
         
         do {
             try fetchedResultsController.performFetch()
@@ -40,20 +42,24 @@ class LogTableViewController: ManagedTabViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return fetchedResultsController.sections!.count
+//        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionInfo = fetchedResultsController.sections![section]
         return sectionInfo.numberOfObjects
+//        return logs.count
     }
 
-    func configureCell(cell: UITableViewCell, indexPath: NSIndexPath) {
+    func configureCell(cell: SessionTableViewCell, indexPath: NSIndexPath) {
         let session = fetchedResultsController.objectAtIndexPath(indexPath) as! Session
-        cell.textLabel?.text = session.additionalNotes
+//        if (logs.count > 0) {
+            cell.configureCellForSection(session)
+//        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(SessionLogCellIdentifier, forIndexPath: indexPath)
+        let cell : SessionTableViewCell = tableView.dequeueReusableCellWithIdentifier(SessionLogCellIdentifier, forIndexPath: indexPath) as! SessionTableViewCell
         configureCell(cell, indexPath: indexPath)
         return cell
     }
@@ -64,6 +70,7 @@ class LogTableViewController: ManagedTabViewController {
         if (segue.identifier == LogToAddEntrySegueIdentifier) {
             let viewController: AddLogEntryViewController = segue.destinationViewController as! AddLogEntryViewController
             viewController.coreDataManager = self.coreDataManager
+            viewController.logTableViewController = self
         } else if (segue.identifier == SessionLogCellIdentifier) {
             
         }

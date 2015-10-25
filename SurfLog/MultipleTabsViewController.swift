@@ -11,7 +11,7 @@ import CoreData
 
 class MultipleTabsViewController: UITabBarController {
     
-    var coreDataManager : CoreDataStack!
+    var coreDataManager : CoreDataManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
