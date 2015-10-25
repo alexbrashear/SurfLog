@@ -14,7 +14,6 @@ class LogTableViewController: ManagedTabViewController, NSFetchedResultsControll
     let SessionLogCellIdentifier = "SessionLogCellIdentifier"
     let LogToAddEntrySegueIdentifier = "LogToAddEntrySegueIdentifier"
     var fetchedResultsController : NSFetchedResultsController!
-//    var logs = [Session]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,20 +41,16 @@ class LogTableViewController: ManagedTabViewController, NSFetchedResultsControll
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return fetchedResultsController.sections!.count
-//        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionInfo = fetchedResultsController.sections![section]
         return sectionInfo.numberOfObjects
-//        return logs.count
     }
 
     func configureCell(cell: SessionTableViewCell, indexPath: NSIndexPath) {
         let session = fetchedResultsController.objectAtIndexPath(indexPath) as! Session
-//        if (logs.count > 0) {
-            cell.configureCellForSection(session)
-//        }
+        cell.configureCellForSection(session)
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -81,6 +76,20 @@ class LogTableViewController: ManagedTabViewController, NSFetchedResultsControll
     
     func addButtonTapped(sender: AnyObject?) {
         self.performSegueWithIdentifier(LogToAddEntrySegueIdentifier, sender: self)
+    }
+    
+    // MARK: - NSFetchedResultsControllerDelegate
+    
+    func controllerWillChangeContent(controller: NSFetchedResultsController) {
+        tableView.beginUpdates()
+    }
+    
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        // TODO
+    }
+    
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        tableView.endUpdates()
     }
 
 }
