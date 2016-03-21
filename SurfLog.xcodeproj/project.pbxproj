@@ -12,29 +12,23 @@
 		C3CA22A71BD40909005755DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CA22A61BD40909005755DE /* Assets.xcassets */; };
 		C3CA22AA1BD40909005755DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CA22A81BD40909005755DE /* LaunchScreen.storyboard */; };
 		C3CA22B51BD40909005755DE /* SurfLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22B41BD40909005755DE /* SurfLogTests.swift */; };
-		C3CA22C21BD40AA8005755DE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C11BD40AA8005755DE /* CoreDataManager.swift */; settings = {ASSET_TAGS = (); }; };
-		C3CA22C51BD42EA6005755DE /* SurfLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
-		C3CA22C71BD43ECA005755DE /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C61BD43ECA005755DE /* AnalyticsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3CA22D01BD4455F005755DE /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CA1BD4455F005755DE /* Board+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		C3CA22D11BD4455F005755DE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CB1BD4455F005755DE /* Board.swift */; settings = {ASSET_TAGS = (); }; };
-		C3CA22D21BD4455F005755DE /* Wetsuit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CC1BD4455F005755DE /* Wetsuit+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		C3CA22D31BD4455F005755DE /* Wetsuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CD1BD4455F005755DE /* Wetsuit.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB181BDBD6840007B824 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB171BDBD6840007B824 /* LogTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB191BDBD6840007B824 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB171BDBD6840007B824 /* LogTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB1B1BDBD6B20007B824 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB1C1BDBD6B20007B824 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB1E1BDBD6CB0007B824 /* BoardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB1D1BDBD6CB0007B824 /* BoardsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB1F1BDBD6CB0007B824 /* BoardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB1D1BDBD6CB0007B824 /* BoardsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB211BDBD6DA0007B824 /* WetsuitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB221BDBD6DA0007B824 /* WetsuitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB251BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB261BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB281BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3D4BB291BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3FF50721BDC384700BE2519 /* AddLogEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		C3FF50781BDC784900BE2519 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50761BDC784900BE2519 /* Session+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		C3FF50791BDC784900BE2519 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50771BDC784900BE2519 /* Session.swift */; settings = {ASSET_TAGS = (); }; };
-		C3FF507B1BDC806200BE2519 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF507A1BDC806200BE2519 /* SessionTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		C3CA22C21BD40AA8005755DE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C11BD40AA8005755DE /* CoreDataManager.swift */; };
+		C3CA22C51BD42EA6005755DE /* SurfLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */; };
+		C3CA22D01BD4455F005755DE /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CA1BD4455F005755DE /* Board+CoreDataProperties.swift */; };
+		C3CA22D11BD4455F005755DE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CB1BD4455F005755DE /* Board.swift */; };
+		C3CA22D21BD4455F005755DE /* Wetsuit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CC1BD4455F005755DE /* Wetsuit+CoreDataProperties.swift */; };
+		C3CA22D31BD4455F005755DE /* Wetsuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA22CD1BD4455F005755DE /* Wetsuit.swift */; };
+		C3D4BB181BDBD6840007B824 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB171BDBD6840007B824 /* LogTableViewController.swift */; };
+		C3D4BB191BDBD6840007B824 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB171BDBD6840007B824 /* LogTableViewController.swift */; };
+		C3D4BB1B1BDBD6B20007B824 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */; };
+		C3D4BB1C1BDBD6B20007B824 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */; };
+		C3FBF0C21C9FAD430005450A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBF0C11C9FAD430005450A /* MainViewController.swift */; };
+		C3FBF0C31C9FAD430005450A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBF0C11C9FAD430005450A /* MainViewController.swift */; };
+		C3FBF0C51C9FAF5E0005450A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBF0C41C9FAF5E0005450A /* ProgressView.swift */; };
+		C3FBF0C61C9FAF5E0005450A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBF0C41C9FAF5E0005450A /* ProgressView.swift */; };
+		C3FF50721BDC384700BE2519 /* AddLogEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */; };
+		C3FF50781BDC784900BE2519 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50761BDC784900BE2519 /* Session+CoreDataProperties.swift */; };
+		C3FF50791BDC784900BE2519 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF50771BDC784900BE2519 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,21 +53,17 @@
 		C3CA22B61BD40909005755DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3CA22C11BD40AA8005755DE /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataManager.swift; path = ../CoreDataManager.swift; sourceTree = "<group>"; };
 		C3CA22C41BD42EA6005755DE /* SurfLog.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = SurfLog.xcdatamodel; sourceTree = "<group>"; };
-		C3CA22C61BD43ECA005755DE /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		C3CA22CA1BD4455F005755DE /* Board+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+CoreDataProperties.swift"; path = "../Board+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3CA22CB1BD4455F005755DE /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = ../Board.swift; sourceTree = "<group>"; };
 		C3CA22CC1BD4455F005755DE /* Wetsuit+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Wetsuit+CoreDataProperties.swift"; path = "../Wetsuit+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3CA22CD1BD4455F005755DE /* Wetsuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wetsuit.swift; path = ../Wetsuit.swift; sourceTree = "<group>"; };
 		C3D4BB171BDBD6840007B824 /* LogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogTableViewController.swift; path = ../LogTableViewController.swift; sourceTree = "<group>"; };
 		C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		C3D4BB1D1BDBD6CB0007B824 /* BoardsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardsTableViewController.swift; sourceTree = "<group>"; };
-		C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WetsuitsTableViewController.swift; sourceTree = "<group>"; };
-		C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleTabsViewController.swift; sourceTree = "<group>"; };
-		C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedTabViewController.swift; sourceTree = "<group>"; };
+		C3FBF0C11C9FAD430005450A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C3FBF0C41C9FAF5E0005450A /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLogEntryViewController.swift; sourceTree = "<group>"; };
 		C3FF50761BDC784900BE2519 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3FF50771BDC784900BE2519 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		C3FF507A1BDC806200BE2519 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		C3FF507C1BDD663200BE2519 /* SurfLog 1.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SurfLog 1.0.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,14 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				C3CA229F1BD40909005755DE /* AppDelegate.swift */,
-				C3D4BB241BDBEBE90007B824 /* MultipleTabsViewController.swift */,
-				C3D4BB271BDC01CD0007B824 /* ManagedTabViewController.swift */,
-				C3FF507A1BDC806200BE2519 /* SessionTableViewCell.swift */,
 				C3D4BB231BDBD6E40007B824 /* Controllers */,
 				C3CA22C31BD42EA6005755DE /* SurfLog.xcdatamodeld */,
 				C3CA22D41BD4456B005755DE /* Model */,
 				C3CA22C11BD40AA8005755DE /* CoreDataManager.swift */,
 				C3CA22A31BD40909005755DE /* Main.storyboard */,
+				C3FBF0C41C9FAF5E0005450A /* ProgressView.swift */,
 				C3CA22A61BD40909005755DE /* Assets.xcassets */,
 				C3CA22A81BD40909005755DE /* LaunchScreen.storyboard */,
 				C3CA22AB1BD40909005755DE /* Info.plist */,
@@ -157,11 +145,9 @@
 		C3D4BB231BDBD6E40007B824 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C3FBF0C11C9FAD430005450A /* MainViewController.swift */,
 				C3FF50731BDC386100BE2519 /* Log */,
-				C3CA22C61BD43ECA005755DE /* AnalyticsViewController.swift */,
 				C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */,
-				C3D4BB1D1BDBD6CB0007B824 /* BoardsTableViewController.swift */,
-				C3D4BB201BDBD6DA0007B824 /* WetsuitsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -275,22 +261,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FF507B1BDC806200BE2519 /* SessionTableViewCell.swift in Sources */,
 				C3D4BB181BDBD6840007B824 /* LogTableViewController.swift in Sources */,
 				C3CA22D31BD4455F005755DE /* Wetsuit.swift in Sources */,
-				C3D4BB251BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */,
+				C3FBF0C51C9FAF5E0005450A /* ProgressView.swift in Sources */,
 				C3FF50781BDC784900BE2519 /* Session+CoreDataProperties.swift in Sources */,
 				C3CA22C21BD40AA8005755DE /* CoreDataManager.swift in Sources */,
 				C3CA22D01BD4455F005755DE /* Board+CoreDataProperties.swift in Sources */,
 				C3CA22C51BD42EA6005755DE /* SurfLog.xcdatamodeld in Sources */,
 				C3FF50791BDC784900BE2519 /* Session.swift in Sources */,
+				C3FBF0C21C9FAD430005450A /* MainViewController.swift in Sources */,
 				C3CA22D21BD4455F005755DE /* Wetsuit+CoreDataProperties.swift in Sources */,
 				C3D4BB1B1BDBD6B20007B824 /* SettingsTableViewController.swift in Sources */,
-				C3D4BB211BDBD6DA0007B824 /* WetsuitsTableViewController.swift in Sources */,
 				C3CA22A01BD40909005755DE /* AppDelegate.swift in Sources */,
-				C3D4BB281BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */,
-				C3D4BB1E1BDBD6CB0007B824 /* BoardsTableViewController.swift in Sources */,
-				C3CA22C71BD43ECA005755DE /* AnalyticsViewController.swift in Sources */,
 				C3FF50721BDC384700BE2519 /* AddLogEntryViewController.swift in Sources */,
 				C3CA22D11BD4455F005755DE /* Board.swift in Sources */,
 			);
@@ -300,13 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D4BB221BDBD6DA0007B824 /* WetsuitsTableViewController.swift in Sources */,
-				C3D4BB1F1BDBD6CB0007B824 /* BoardsTableViewController.swift in Sources */,
 				C3D4BB191BDBD6840007B824 /* LogTableViewController.swift in Sources */,
 				C3CA22B51BD40909005755DE /* SurfLogTests.swift in Sources */,
-				C3D4BB291BDC01CD0007B824 /* ManagedTabViewController.swift in Sources */,
-				C3D4BB261BDBEBE90007B824 /* MultipleTabsViewController.swift in Sources */,
 				C3D4BB1C1BDBD6B20007B824 /* SettingsTableViewController.swift in Sources */,
+				C3FBF0C31C9FAD430005450A /* MainViewController.swift in Sources */,
+				C3FBF0C61C9FAF5E0005450A /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

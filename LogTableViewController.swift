@@ -8,8 +8,9 @@
 
 import UIKit
 import CoreData
+import Foundation
 
-class LogTableViewController: ManagedTabViewController, NSFetchedResultsControllerDelegate {
+class LogTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     let SessionLogCellIdentifier = "SessionLogCellIdentifier"
     let LogToAddEntrySegueIdentifier = "LogToAddEntrySegueIdentifier"
@@ -17,6 +18,11 @@ class LogTableViewController: ManagedTabViewController, NSFetchedResultsControll
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tabBarHeight = self.tabBarController?.tabBar.bounds.height
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        let navBarHeight = self.navigationController?.navigationBar.bounds.height
+        self.tableView.contentInset = UIEdgeInsets(top: navBarHeight!+statusBarHeight, left: 0.0, bottom: tabBarHeight!, right: 0.0)
         
         let fetchRequest = NSFetchRequest(entityName: "Session")
         let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
@@ -63,7 +69,8 @@ class LogTableViewController: ManagedTabViewController, NSFetchedResultsControll
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == LogToAddEntrySegueIdentifier) {
-            let viewController: AddLogEntryViewController = segue.destinationViewController as! AddLogEntryViewController
+            let navController: UINavigationController = segue.destinationViewController as! UINavigationController
+            let viewController: AddLogEntryTableViewController = navController.topViewController as! AddLogEntryTableViewController
             viewController.coreDataManager = self.coreDataManager
             viewController.logTableViewController = self
         } else if (segue.identifier == SessionLogCellIdentifier) {
