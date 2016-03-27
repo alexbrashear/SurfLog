@@ -12,18 +12,17 @@ import Foundation
 
 class LogTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
+    var coreDataManager: CoreDataManager!
     let SessionLogCellIdentifier = "SessionLogCellIdentifier"
     let LogToAddEntrySegueIdentifier = "LogToAddEntrySegueIdentifier"
     var fetchedResultsController : NSFetchedResultsController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let tabBarHeight = self.tabBarController?.tabBar.bounds.height
-        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
-        let navBarHeight = self.navigationController?.navigationBar.bounds.height
-        self.tableView.contentInset = UIEdgeInsets(top: navBarHeight!+statusBarHeight, left: 0.0, bottom: tabBarHeight!, right: 0.0)
-        
+        self.setupFetchedResultsController()
+    }
+    
+    func setupFetchedResultsController() {
         let fetchRequest = NSFetchRequest(entityName: "Session")
         let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
@@ -36,11 +35,6 @@ class LogTableViewController: UITableViewController, NSFetchedResultsControllerD
         } catch let error as NSError {
             print("Error: \(error.localizedDescription)")
         }
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action:"addButtonTapped:")
-        self.tabBarController!.navigationItem.setRightBarButtonItem(addButton, animated: true)
     }
 
     // MARK: - Table view data source
@@ -56,7 +50,6 @@ class LogTableViewController: UITableViewController, NSFetchedResultsControllerD
 
     func configureCell(cell: SessionTableViewCell, indexPath: NSIndexPath) {
         let session = fetchedResultsController.objectAtIndexPath(indexPath) as! Session
-        cell.configureCellForSection(session)
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -69,8 +62,7 @@ class LogTableViewController: UITableViewController, NSFetchedResultsControllerD
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == LogToAddEntrySegueIdentifier) {
-            let navController: UINavigationController = segue.destinationViewController as! UINavigationController
-            let viewController: AddLogEntryTableViewController = navController.topViewController as! AddLogEntryTableViewController
+            let viewController = segue.destinationViewController as! AddLogEntryViewController
             viewController.coreDataManager = self.coreDataManager
             viewController.logTableViewController = self
         } else if (segue.identifier == SessionLogCellIdentifier) {
