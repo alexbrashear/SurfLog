@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="qek-hM-d7r">
             <objects>
-                <viewController id="tUE-WA-sPV" sceneMemberID="viewController">
+                <viewController id="tUE-WA-sPV" customClass="MainViewController" customModule="SurfLog" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Sw-1D-Q08"/>
                         <viewControllerLayoutGuide type="bottom" id="dlI-aJ-dHN"/>

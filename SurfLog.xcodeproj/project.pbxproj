@@ -149,20 +149,12 @@
 			isa = PBXGroup;
 			children = (
 				C3FBF0C11C9FAD430005450A /* MainViewController.swift */,
-				C3FF50731BDC386100BE2519 /* Log */,
-				C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		C3FF50731BDC386100BE2519 /* Log */ = {
-			isa = PBXGroup;
-			children = (
 				C3FF50711BDC384700BE2519 /* AddLogEntryViewController.swift */,
 				C3D4BB171BDBD6840007B824 /* LogTableViewController.swift */,
 				C3FBF0C71CA0D01F0005450A /* SessionTableViewCell.swift */,
+				C3D4BB1A1BDBD6B20007B824 /* SettingsTableViewController.swift */,
 			);
-			name = Log;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
