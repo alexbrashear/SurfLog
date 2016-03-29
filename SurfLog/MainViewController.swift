@@ -14,17 +14,23 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "Summary"
+        let progressView = ProgressView(frame: self.view.frame)
+        self.view.addSubview(progressView)
+        progressView.animateProgressView()
         // Do any additional setup after loading the view.
     }
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showLog" {
+            if let LogTableViewController = segue.destinationViewController as? LogTableViewController {
+                LogTableViewController.coreDataManager = coreDataManager
+            }
+        }
     }
-    */
+ 
 
 }

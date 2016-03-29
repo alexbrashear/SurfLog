@@ -13,12 +13,12 @@ import Foundation
 class LogTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     var coreDataManager: CoreDataManager!
-    let SessionLogCellIdentifier = "SessionLogCellIdentifier"
-    let LogToAddEntrySegueIdentifier = "LogToAddEntrySegueIdentifier"
     var fetchedResultsController : NSFetchedResultsController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Log"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(addLogButtonTapped))
         self.setupFetchedResultsController()
     }
     
@@ -61,20 +61,15 @@ class LogTableViewController: UITableViewController, NSFetchedResultsControllerD
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == LogToAddEntrySegueIdentifier) {
-            let viewController = segue.destinationViewController as! AddLogEntryViewController
-            viewController.coreDataManager = self.coreDataManager
-            viewController.logTableViewController = self
-        } else if (segue.identifier == SessionLogCellIdentifier) {
-            
+        if (segue.identifier == "modalAddLog") {
+            if let viewController = segue.destinationViewController as? AddLogEntryViewController {
+                viewController.coreDataManager = coreDataManager
+            }
         }
     }
-
     
-    // MARK: - IBActions
-    
-    func addButtonTapped(sender: AnyObject?) {
-        self.performSegueWithIdentifier(LogToAddEntrySegueIdentifier, sender: self)
+    func addLogButtonTapped() {
+        performSegueWithIdentifier("modalAddLog", sender: self)
     }
     
     // MARK: - NSFetchedResultsControllerDelegate
@@ -101,5 +96,4 @@ class LogTableViewController: UITableViewController, NSFetchedResultsControllerD
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
         tableView.endUpdates()
     }
-
 }
